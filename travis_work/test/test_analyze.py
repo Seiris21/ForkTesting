@@ -2,7 +2,7 @@ from .. import analyze
 
 import pytest
 
-TEST_FILE = './data/sf_restaurant_scores_subset.csv'
+TEST_FILE = '../data/sf_restaurant_scores_subset.csv'
 
 
 @pytest.fixture(scope='module')
@@ -11,7 +11,7 @@ def data():
 
 
 def test_read_file(data):
-    assert len(data) == 10
+    assert len(data) == 100
     assert len(data[0].keys()) == 17
 
 
